@@ -1,0 +1,173 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+a, a:hover, a:focus, button, button:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+::selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+
+::-moz-selection {
+    background: rgba(166, 175, 189, 0.3);
+}
+
+/*==========================
+        2.HELPER
+============================*/
+
+.section {
+    background-color: #fff;
+}
+
+.section .container {
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.btn {
+    padding: .7em 1.5em;
+}
+
+.btn-custom {
+    background-color: #21ae61;
+    border: 2px solid #20ba6c;
+    color: #fff;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.btn-custom:focus,
+.btn-custom:hover,
+
+.btn-custom-blue:hover,
+.btn-custom-blue:focus,
+.btn-custom-blue:active,
+.btn-custom-blue.active,
+.btn-custom-blue.focus,
+.btn-custom-blue:active,
+.btn-custom-blue:focus,
+.btn-custom-blue:hover,
+.open>.dropdown-toggle.btn-custom-blue {
+    background-color: #1f9955;
+    border-color: #1b9c5b;
+    color: #fff;
+}
+
+.vertical-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+/*==========================
+        4.HOME
+============================*/
+
+.home-bg-img {
+    background-image: url(../images/home-bg3.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+.home_divider {
+    height: .4em;
+    width: 20em;
+    float: right;
+    background-color: #fff;
+    border-radius: 5em;
+}
+
+.header_subtitle {
+    line-height: 1.8;
+    max-width: 450px;
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/*==========================
+        6.SERVICES
+============================*/
+
+.services_boxes {
+    border: 1px solid #e3e6f0;
+    padding: 4em 0;
+}
+
+.services_boxes .services_icon i {
+    font-size: 9em;
+    color: #dedfe6;
+}
+
+.services_boxes .services_content p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+/*==========================
+        20.RESPONSIVE
+============================*/
+
+@media (max-width: 768px) {
+    .header_title {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+    .header_subtitle {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    .h-100vh {
+        height: auto;
+    }
+    .clip-home {
+        clip-path: none;
+    }
+    .vertical-content {
+        display: inherit;
+    }
+
+    .home-bg-color,
+    .h-100vh.jarallax,
+    .home-bg-img,
+    .home-bg-color-gradient,
+    .h-100vh,
+    .home-half,
+    .half-slider {
+        padding: 1em .5em 3em .5em;
+    }
+
+    .services_boxes .services_icon i {
+        font-size: 130px;
+    }
+
+    .services_icon, .services_content {
+        margin-top: 15px;
+    }
+
+    .services_boxes {
+        margin-right: 7px !important;
+        margin-left: 7px !important;
+    }
+}

@@ -1,0 +1,155 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+}
+
+#main_logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#main_logo img {
+    width: 4em;
+    float: right;
+    padding-top: .5em;
+    padding-left: 1.2em;
+}
+
+#main_logo h1 {
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding-left: .7em;
+    letter-spacing: .05em;
+    float: right;
+    line-height: 1.8em;
+}
+
+
+.section-inverted {
+    background: #111;
+    color: white;
+}
+
+/* inspired by backers from https://nette.org/ */
+#projects {
+    transition: all .3s ease;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: .66;
+}
+
+#projects:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+#projects img:hover {
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+.img-thumbnail {
+    max-width: 6em;
+}
+
+h2 {
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #4b4b4b;
+}
+
+#footer {
+    padding-top: 1.8em;
+    padding-bottom: 1em;
+
+    background-color: #24292e;
+    color: #FFF;
+    font-size: 1.3em;
+}
+
+#footer a {
+    color: #21c87a;
+}
+
+#footer a:hover {
+    color: #20a55b;
+    text-decoration: underline !important;
+}
+
+#footer #made_by {
+    color: #DDD;
+    font-size: 1em;
+}
+
+#client .reference-text {
+    font-size: 1.5em;
+}
+
+.btn {
+    font-size: 1.2em;
+}
+
+.section:not(.bg-light) {
+    background-image: url('../assets/chars.png');
+    background-position: top left;
+    background-repeat: repeat;
+}
+
+.section:not(.bg-light) .container {
+    background: white;
+}
+
+#video img {
+    max-width: 100%;
+    border: 1px solid #DDD;
+}
+
+.header_title {
+    font-size: 4em;
+    font-weight: 300;
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+    .header_title {
+        font-size: 3em;
+    }
+
+    .home_divider {
+        width: 15em;
+    }
+}
+
+@media (max-width: 768px) {
+    .header_title {
+        font-size: 2.5em;
+    }
+
+    .home_divider {
+        width: 10em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #client .reference-text {
+        font-size: 1.2em;
+    }
+}
+
+.container {
+    max-width: 70em;
+}
+
+/* not sure why, but em in footer are bigger; this is to make the width the same size as rest */
+#footer .container {
+    max-width: 55em;
+}
+
+#reference .name {
+    font-size: 1.5em;
+}
