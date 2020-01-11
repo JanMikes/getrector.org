@@ -11,7 +11,7 @@ services:
             - .env
         environment:
             XDEBUG_CONFIG: "remote_host=host.docker.internal"
-            PHP_IDE_CONFIG: "serverName=getrector_corg
+            PHP_IDE_CONFIG: "serverName=getrector_org"
         ports:
             - "8080:80"
         volumes:
