@@ -73,6 +73,10 @@ FROM production as dev
 ## see https://getcomposer.org/doc/articles/troubleshooting.md#memory-limit-errors
 RUN COMPOSER_MEMORY_LIMIT=-1 composer install --prefer-dist --no-scripts --no-progress --no-suggest
 
-## cleanup
-RUN apt-get clean \
+COPY ./.docker/php/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
+
+## Install Xdebug extension + cleanup
+RUN pecl -q install xdebug \
+    && docker-php-ext-enable xdebug \
+    && apt-get clean \
     && rm -rf /tmp/* /usr/local/lib/php/doc/* /var/cache/apt/*
