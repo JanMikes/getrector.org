@@ -72,9 +72,5 @@ final class GetRectorKernel extends Kernel
     {
         // needs to be first, since it's adding new service definitions
         $containerBuilder->addCompilerPass(new AutoReturnFactoryCompilerPass());
-
-        // autowiring
-        $containerBuilder->addCompilerPass(new AutoBindParametersCompilerPass());
-        $containerBuilder->addCompilerPass(new AutowireArrayParameterCompilerPass());
     }
 }

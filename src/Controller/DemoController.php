@@ -44,8 +44,6 @@ final class DemoController extends AbstractController
      */
     public function __invoke(Request $request, ?RectorRun $rectorRun = null): Response
     {
-        throw new AccessDeniedException();
-
         $form = $this->createForm(RectorRunFormType::class);
         $form->handleRequest($request);
 
