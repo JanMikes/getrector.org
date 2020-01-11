@@ -12,7 +12,7 @@ if ($_SERVER['APP_DEBUG']) {
     umask(0000);
 
     // tracy
-    Debugger::enable(Debugger::DEVELOPMENT);
+    Debugger::enable(Debugger::DEVELOPMENT, __DIR__ . '/../var/log');
 
     Debug::enable();
 }
